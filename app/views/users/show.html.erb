@@ -1,0 +1,37 @@
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+		<h1>
+			<%= gravatar_for @user %>
+			<%= @user.name %>
+		</h1>
+		 <% unless @user.events.empty? %>
+        <table class="events" summary="User Events">
+          <%= render @events %>
+        </table>
+        <%= will_paginate @events %>
+      <% end %>
+	</td>
+	
+	
+	<td class="sidebar round">
+	
+	  <% if current_user.admin? %>
+		<strong>Name</strong> <%= @user.name %><br />
+		<strong>Title</strong><br />
+		<strong>Employee Since</strong>
+		<strong>Subscribed Events:</strong> <%= @user.events.count %>
+	  <% else %>
+		<strong>Name</strong> <%= @user.name %><br />
+		<strong>Subscriber Type</strong>               <!-- <%= link_to user_path(@user), @user %> -->
+		<strong>Business Title:</strong>
+		<strong>Subscribed Events:</strong> <%= @user.events.count %>
+	  <% end %>
+	  
+	  </br></br>
+	  <%= link_to "Add an Event", addevent_path, :class => "add_button1" %>
+
+    </td>
+	
+  </tr>
+</table>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <%= csrf_meta_tag %>
+  <%= render 'layouts/stylesheets' %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'jquery-1.3.2.min.js' %>
+  <%= javascript_include_tag 'rails' %>
+  <%= javascript_include_tag 'jquery.coda-slider-2.0.js' %>
+  <%= javascript_include_tag 'jquery.easing.1.3.js' %>
+ 	<script type="text/javascript">
+		$().ready(function() {
+			$('#coda-slider-1').codaSlider();
+		});
+	</script>
+</head>
+
+<body>
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <section class="round">
+		<% flash.each do |key, value| %>
+            <%= content_tag(:div, value, :class => "flash #{key}") %>
+        <% end %>
+        <%= yield %>
+      </section>
+      <%= render 'layouts/footer' %>
+    </div>
+</body>
+</html>

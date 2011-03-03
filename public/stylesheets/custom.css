@@ -1,0 +1,281 @@
+.container {
+  width: 710px;
+}
+
+body {
+  background: #f9d549;
+}
+
+
+header {
+  padding-top: 10px;
+}
+
+header img {
+  padding-top: 1em;
+
+}
+
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: #f0e68c;
+}
+
+.free {
+/* margin-top: 1em; */
+  font-size: 120%;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+
+.cheap {
+ /* margin-top: 1em; */
+  font-size: 120%;
+  padding: 20px;
+  padding-top: 0px;
+
+}
+
+section h1 {
+  font-size: 200%;
+}
+
+/* Links */
+
+a {
+  color: #09c;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+
+}
+}
+
+a:visited {
+  color: #069;
+}
+
+a.add_button {
+  margin-right: 10px;
+  display: block;
+  float: left;
+  text-align: center;
+  width: 130px;
+  color: #fff;
+  background: #39c;
+  font-size: 10pt;
+  padding:0px;
+}
+
+a.add_button1 {
+  margin-right: 0px;
+  display: block;
+  float: left;
+  text-align: left;
+  width: 130px;
+  color: #39c;
+  font-size: 10pt;
+  padding:0px;
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
+}
+
+/* Navigation */
+
+nav {
+  float: right;
+}
+
+nav {
+ /* background-color: white;  */
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
+
+.profile img.gravatar {
+  border: 1px solid #000;
+  margin-bottom: -15px;
+}
+
+/* For Forms */
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* For error messages */
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+
+/* For user index */
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
+
+/* For Events */
+
+h1.event {
+  margin-bottom: 0.3em;
+}
+
+table.events {
+  margin-top: 0em;
+}
+
+table.events tr {
+  height: 70px;
+}
+
+table.events tr td.gravatar {
+/*  border-top: 1px solid #000; */
+  vertical-align: top;
+  width: 50px;
+}
+
+table.events tr td.event {
+ /* border-top: 1px solid #000; */
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.events tr td.event span.timestamp {
+  display: block;
+  font-size: 65%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.events {
+  font-size: 80%;
+}
+
+form.new_event {
+  margin-bottom: 2em;
+}
+
+form.new_event textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
+
