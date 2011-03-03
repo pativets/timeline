@@ -13383,3 +13383,31 @@ Rendered layouts/_header.html.erb (3.2ms)
 Rendered layouts/_footer.html.erb (2.2ms)
 Rendered pages/home.html.erb within layouts/application (242.0ms)
 Completed 200 OK in 328ms (Views: 279.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Mar 03 15:45:01 -0500 2011
+  Processing by PagesController#home as HTML
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+Rendered shared/_feed_item.html.erb (95.4ms)
+Rendered shared/_feed.html.erb (152.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendered shared/_feed_item.html.erb (3.0ms)
+Rendered shared/_feed.html.erb (4.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+Rendered shared/_feed_item.html.erb (3.4ms)
+Rendered shared/_feed.html.erb (5.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendered shared/_feed_item.html.erb (2.9ms)
+Rendered shared/_feed.html.erb (4.6ms)
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendered layouts/_header.html.erb (3.5ms)
+Rendered layouts/_footer.html.erb (1.2ms)
+Rendered pages/home.html.erb within layouts/application (186.5ms)
+Completed 200 OK in 222ms (Views: 191.4ms | ActiveRecord: 1.4ms)
